@@ -1,0 +1,29 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 2e32dc6a68528ecf7e2f7195a653bc9e352941e8b979de8c36bb500107ae2dce
+
+name:           kubernetes-watch
+version:        0.1.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Kubernetes.Watch.Client
+  other-modules:
+      Paths_kubernetes_watch
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson >=1.0 && <2.0
+    , base >=4.7 && <5.0
+    , bytestring >=0.10.0 && <0.11
+    , http-client >=0.5 && <0.6
+    , kubernetes ==0.1.0.0
+    , mtl >=2.2.1
+    , streaming-bytestring >=0.1.5 && <0.2.0
+    , text >=0.11 && <1.3
+  default-language: Haskell2010
